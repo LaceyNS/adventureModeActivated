@@ -1,8 +1,21 @@
 html {
-    font-size: 62.5%
+    font-size: 125%
+}
+
+.wrapper {
+    margin: 50px;
 }
 
 h1 {
     color: rebeccapurple;
     font-size: 5rem;
+}
+
+section {
+    display: none;
+    margin: 50px auto;
+}
+
+.introduction {
+    display: block;
 }

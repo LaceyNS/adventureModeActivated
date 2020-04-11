@@ -2,7 +2,7 @@
 const ama = {};
 let adventurerName = "";
 
-//Store the form submuit input as a variable 
+//Store the form submuit input as a variable for the name
 ama.saveName = () => {
     $('.nameButton').on('click', function(e) {
     e.preventDefault();
@@ -10,34 +10,34 @@ ama.saveName = () => {
     // insert entered name into story
     $('span.adventurerName').append(adventurerName);
     console.log(adventurerName);
+    $('.opening').show();
     });
 };
 
+//Reveal the section associated with the button selection
+ama.showPath = () => {
+    $('button').on('click', function() {
+        let pathReveal = $(this).attr('class');
+        $(`section.${pathReveal}`).css('display', 'block');
+        //Disable the previous button and it's sibling button
+        $(this).attr('disabled', 'disabled');
+        $(this).siblings().attr('disabled', 'disabled');
+    });
+};
 
+//Initialize
 ama.init = () => {
     console.log('init');
     ama.saveName();
+    ama.showPath();
 };
-/* Adventure Mode Activated
 
-* A landing page with the title and greeting.
-
-*Underneath the greeting, an input for the adventurer name and an image.
-
-*Save the name input value as a variable to be used as the name in the story.
-
-*On submitting the name data, a block of text of the opening to the story is displayed. 
-
-*Two buttons with options for the adventurer to take. 
-
-*The button uses toggleClass or .hide to next block of text in the story. 
-
-*Repeat until the end of the story.
+/*
 
 *Include a button at the end to reset the page which reverts all p to hidden.
 
 */ 
-
+//Document ready
 $(function(){
     ama.init();
 });
