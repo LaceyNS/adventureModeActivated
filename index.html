@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adventure Mode Activated</title>
-</head>
-<body>
-    <header>
-        <h1>Adventure Mode Activated</h1>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Adventure Mode Activated</title>
+    </head>
+    <body>
+        <header>
+            <h1>Adventure Mode Activated</h1>
+        </header>
+        <main>
+            <section class="introduction">
+                <form>
+                    <label for="adventurerName">What shall we call the adventurer?</label>
+                    <input type="text" id="adventurerName" name="adventurerName" required placeholder="Zog">
+                    <button class="nameButton">Let's begin our adventure shall we?</button>
+                </form>
+                <img src="http://placekitten.com/500/300" alt="">
+            </section>
+            <section class="opening">
+                <p>Hello <span class="adventurerName"> </span>. You wake up to find yourself laying in a bed of grass with no memory of how you ended up here. You are laying in the middle of a clearing, surrounded by trees. You look around and notice trampled grass heading into a particularly dense part of the forest. Behind you, you can faintly hear water splashing. 
+                Do you:
+                </p>
+                <button>Take the grass path into the forest</button>
+                <button>Head towards the sound of water</button>
+            </section>
+            <section class="forestPath">
+                <p>You follow the path into the forest. It's a very small path, likely used only by smaller animals normally. You continually have to keep ducking and getting snagged on branches. The further you go, the darker and more dense the forest seems to get. You strain your ears to listen for danger and you swear you can faintly hear someone calling out "<span class="adventurerName"> </span> ... <span class="adventurerName"> </span> ..."  from the darkest part of the forest ahead of you. However, the further you go, the more uneasy you feel.
+                Do you: </p>
+                <button>Go towards the voice in the darkest part of the forest</button>
+                <button>Give in to the unease and backtrack towards the water</button>
+            </section>
+            <section class="darkForestPath">
+                <p>You decide to follow the voice, hoping that if they know who you are, they also might know how you ended up here. You go deeper and deeper into the forest, no longer following a path as there doesn't seem to be one near you anymore. The trees are now so close together that it's almost complete darkness around you. As you stumble towards the voice, you hear a twig snap behind you and a push from behind. You put your arms out to catch your fall but realize that you have been pushed into a hole and can't get purchase around you. You hear the voice laughing at the opening of the hole. You shut your eyes and brace yourself before landing hard on the ground. Thankfully, your landing was softened by plush grass.</p>
+                <button>Open your eyes</button>
+            </section>
+            <section class="waterPath">
+                <p>You head through the trees, listening as the sound of water gets stronger. You eventually get to a fast moving river. It looks too fast moving to make it all the way across the river safely. You don't see any signs from people along the riverbed, only animal tracks. 
+                Do you:
+                </p>
+                <button class="">Follow the water downstream</button>
+                <button class="">Go upstream</button>
+            </section>
+            <section class="upstream">
+                <p>You follow the river upstream until you reach a waterfall. You look at the cliff wall but don't notice any way to climb it. You have only the river and dense, ominous forest near you. 
+                Do you:
+                </p>
+                <button class="">Turn around and follow the water back downstream</button>
+                <button class="">Go towards the darkest part of the forest</button>
+            </section>
+            <section class="downstream">
+                <p>You walk along the winding river for what seems like hours. After a large bend, the river opens up into a large body of water. You can see small wooden boats bobbing in the water, finally showing signs of other people. You pick up your pace towards the beach and notice a marina with a building at it. You get to the building and notice a sign written in a language you don't recognize. You approach the door and knock. A voice responds in a foreign language, then opens up and speaks to you. On seeing your blank expression, they act out the motions of inviting you in which you take them up on. Yay for friendly people! </p>
+            </section>
+        </main>
+        <footer>
+            <p>Created by Lacey Savage</p>
+        </footer>
+        <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+        <script src='scripts.js'></script>
+    </body>
 </html>

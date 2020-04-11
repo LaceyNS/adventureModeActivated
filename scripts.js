@@ -1,3 +1,23 @@
+//Name Space the app
+const ama = {};
+let adventurerName = "";
+
+//Store the form submuit input as a variable 
+ama.saveName = () => {
+    $('.nameButton').on('click', function(e) {
+    e.preventDefault();
+    adventurerName = $('input').val();
+    // insert entered name into story
+    $('span.adventurerName').append(adventurerName);
+    console.log(adventurerName);
+    });
+};
+
+
+ama.init = () => {
+    console.log('init');
+    ama.saveName();
+};
 /* Adventure Mode Activated
 
 * A landing page with the title and greeting.
@@ -17,3 +37,7 @@
 *Include a button at the end to reset the page which reverts all p to hidden.
 
 */ 
+
+$(function(){
+    ama.init();
+});
