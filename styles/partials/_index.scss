@@ -53,10 +53,14 @@ button {
     margin: 10px 10px 10px 0px;
 }
 
-.highContrast {
+.highContrast{
     background-color: #1C1C1C;
     color: #E8F0FF;
     }
+
+.dark {
+    background-color: #1C1C1C;
+}
 
 @media(max-width:1030px) {
     h1 {

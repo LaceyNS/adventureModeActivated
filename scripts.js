@@ -18,7 +18,7 @@ ama.saveName = () => {
 //Create high contrast button
 ama.highContrast = () => {
     $('.highContrast').on('click', function() {
-        $('body').css('background-color', '#1C1C1C');
+        $('body').toggleClass('dark');
     })
 };
 
@@ -30,7 +30,7 @@ ama.showPath = () => {
         //Save the story section into a recap area
         $(this).siblings('p').appendTo('section.storyRecap');
         //Hide the previous part of the story
-        $(this).parent().css('display', 'none');
+        $(this).parent('section').css('display', 'none');
     });
 };
 
