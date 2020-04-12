@@ -230,6 +230,7 @@ body {
   color: #E8F0FF;
   font-size: 2.4rem;
   line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -238,8 +239,15 @@ body {
 }
 
 h1 {
-  color: #A4C2A5;
-  font-size: 7.5rem;
+  color: #B9E1BA;
+  font-size: 6rem;
+  line-height: 1.2;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.highContrast {
+  background-color: #1C1C1C;
+  color: #E8F0FF;
 }
 
 section {
@@ -269,7 +277,7 @@ img {
 
 button {
   padding: 10px 20px;
-  background-color: #78A1BB;
+  background-color: #A3DFFE;
   margin: 10px 10px 10px 0px;
 }
 
@@ -284,7 +292,7 @@ button {
 
 @media (max-width: 800px) {
   .wrapper {
-    margin: 1rem 5rem;
+    margin: 1.75rem 5rem;
   }
   button,
   input[type="text"] {
@@ -296,7 +304,7 @@ button {
 
 @media (max-width: 650px) {
   .wrapper {
-    margin: .75rem;
+    margin: 1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

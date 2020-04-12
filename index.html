@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Adventure Mode Activated</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="wrapper">
@@ -16,7 +17,7 @@
                 <section class="introduction">
                     <form>
                         <label for="adventurerName">What shall we call the adventurer?<span class="visuallyHidden">(Required)</span></label>
-                        <input type="text" id="adventurerName" placeholder="Zog" name="adventurerName" required="true" >
+                        <input type="text" id="adventurerName" placeholder="Zog" value="Zog" name="adventurerName" required="true">
                         <button type="submit" class="nameButton">Let's begin our adventure shall we?</button>
                     </form>
                     <figure>
@@ -83,6 +84,9 @@
                 </section>
                 <section class="storyRecap">
                 </section>
+                <div>
+                    <button class="highContrast">High Contrast</button>
+                </div>
             </main>
             <footer>
                 <button class="refresh">Click to Restart</button>

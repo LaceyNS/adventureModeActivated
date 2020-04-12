@@ -15,6 +15,13 @@ ama.saveName = () => {
     });
 };
 
+//Create high contrast button
+ama.highContrast = () => {
+    $('.highContrast').on('click', function() {
+        $('body').css('background-color', '#1C1C1C');
+    })
+};
+
 //Reveal the section associated with the button selection
 ama.showPath = () => {
     $('button').on('click', function() {
@@ -40,6 +47,7 @@ ama.init = () => {
     ama.saveName();
     ama.showPath();
     ama.refresh();
+    ama.highContrast();
 };
 
 //Document ready
