@@ -11,6 +11,7 @@ ama.saveName = () => {
     $('span.adventurerName').append(adventurerName);
     console.log(adventurerName);
     $('.opening').show();
+    $('form').css('display', 'none');
     });
 };
 
@@ -19,17 +20,24 @@ ama.showPath = () => {
     $('button').on('click', function() {
         let pathReveal = $(this).attr('class');
         $(`section.${pathReveal}`).css('display', 'block');
-        //Disable the previous button and it's sibling button
-        $(this).attr('disabled', 'disabled');
-        $(this).siblings().attr('disabled', 'disabled');
+        //Save the story section into a recap area
+        $(this).siblings('p').appendTo('section.storyRecap');
+        //Hide the previous part of the story
+        $(this).parent().css('display', 'none');
     });
 };
 
+ama.refresh = () => {
+    $('.refresh').on('click', function() {
+        window.location.reload();
+    });
+};
 //Initialize
 ama.init = () => {
     console.log('init');
     ama.saveName();
     ama.showPath();
+    ama.refresh();
 };
 
 /*
