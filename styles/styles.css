@@ -222,16 +222,24 @@ textarea {
 }
 
 html {
-  font-size: 125%;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #566246;
+  color: #E8F0FF;
+  font-size: 2.4rem;
+  line-height: 1.6;
 }
 
 .wrapper {
-  margin: 50px;
+  margin: 5rem 10rem;
+  max-width: 1500px;
 }
 
 h1 {
-  color: rebeccapurple;
-  font-size: 5rem;
+  color: #A4C2A5;
+  font-size: 7.5rem;
 }
 
 section {
@@ -239,12 +247,56 @@ section {
   margin: 50px auto;
 }
 
+p {
+  padding: 15px 0;
+}
+
+figcaption {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
 .introduction {
   display: block;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 50vh;
+  margin-top: 50px;
+}
+
 button {
-  padding: 10px 25px;
-  background-color: cornflowerblue;
+  padding: 10px 20px;
+  background-color: #78A1BB;
+  margin: 10px 10px 10px 0px;
+}
+
+@media (max-width: 1030px) {
+  h1 {
+    font-size: 5rem;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    margin: 1rem 5rem;
+  }
+  button,
+  input[type="text"] {
+    width: 100%;
+    padding: 25px 0;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    margin: .75rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

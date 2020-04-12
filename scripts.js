@@ -11,7 +11,7 @@ ama.saveName = () => {
     $('span.adventurerName').append(adventurerName);
     console.log(adventurerName);
     $('.opening').show();
-    $('form').css('display', 'none');
+    $('.introduction').css('display', 'none');
     });
 };
 
@@ -27,11 +27,13 @@ ama.showPath = () => {
     });
 };
 
+//Restart button 
 ama.refresh = () => {
     $('.refresh').on('click', function() {
         window.location.reload();
     });
 };
+
 //Initialize
 ama.init = () => {
     console.log('init');
@@ -40,11 +42,6 @@ ama.init = () => {
     ama.refresh();
 };
 
-/*
-
-*Include a button at the end to reset the page which reverts all p to hidden.
-
-*/ 
 //Document ready
 $(function(){
     ama.init();
