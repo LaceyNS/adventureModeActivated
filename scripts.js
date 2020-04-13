@@ -9,7 +9,6 @@ ama.saveName = () => {
     adventurerName = $('input').val();
     // insert entered name into story
     $('span.adventurerName').append(adventurerName);
-    console.log(adventurerName);
     $('.opening').show();
     $('.introduction').css('display', 'none');
     });
@@ -43,7 +42,6 @@ ama.refresh = () => {
 
 //Initialize
 ama.init = () => {
-    console.log('init');
     ama.saveName();
     ama.showPath();
     ama.refresh();
